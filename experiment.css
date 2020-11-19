@@ -1,0 +1,86 @@
+
+@keyframes grow {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 200px;
+    }
+}
+.grow {
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0%, 100% {
+        left: 0%;
+    }
+    50% {
+        left: 90%;
+    }
+}
+.slide {
+    position: relative;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+}
+.pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colour {
+    0% {
+      color: yellow;
+    }
+    50% {
+      color: red;
+    }
+    100% {
+      color:blue;
+    }
+  }
+.colour {
+    animation-name: colour;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.spin {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes stop {
+}
+.stop {
+    animation-play-state: paused;
+}
+
